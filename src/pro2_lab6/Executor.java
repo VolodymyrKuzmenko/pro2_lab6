@@ -10,9 +10,9 @@ import java.util.concurrent.Executors;
  *                                                                           *
  * Task: MA = (B*C)*MO + α*(MT*MR)                                           *
  *                                                                           *
- * @file Executor.java 										                 *
- * @author Kuzmenko Volodymyr					                             *
- * @group IO-21								                                 *
+ * @file Executor.java 							     *
+ * @author Kuzmenko Volodymyr					             *
+ * @group IO-21								     *
  * @date 17.04.2015                                                          *
  *                                                                           *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
