@@ -7,13 +7,16 @@ public class SynchronizationMonitor {
 
 	public synchronized void inputSignal() {
 		inputFlag++;
-		if (inputFlag == 3)
+	
+		if (inputFlag >= 3) {
 			notifyAll();
+			
+		}
 	}
 
 	public synchronized void calcVSignal() {
 		vFlag++;
-		if (vFlag == Executor.P)
+		if (vFlag >= Executor.P)
 			notifyAll();
 	}
 
@@ -25,7 +28,7 @@ public class SynchronizationMonitor {
 
 	public synchronized void waitForInput() {
 		try {
-			wait();
+			if (inputFlag<3) wait();
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -34,6 +37,7 @@ public class SynchronizationMonitor {
 
 	public synchronized void waitForCalcV() {
 		try {
+			if (vFlag<Executor.P)
 			wait();
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
@@ -43,6 +47,7 @@ public class SynchronizationMonitor {
 
 	public synchronized void waitForCalcMA() {
 		try {
+			if (MaFlag<Executor.P-1)
 			wait();
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
