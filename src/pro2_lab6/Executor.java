@@ -1,5 +1,18 @@
 package pro2_lab6;
-
+/**
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ *                                                                           *
+ *                 Laboratory work #6. Java. Monitors                        *
+ *                                                                           *
+ * Task: MA = (B*C)*MO + α*(MT*MR)                                           *
+ *                                                                           *
+ * @file Executor.java 										                 *
+ * @author Kuzmenko Volodymyr					                             *
+ * @group IO-21								                                 *
+ * @date 17.04.2014                                                          *
+ *                                                                           *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ */
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -26,8 +39,9 @@ public class Executor {
 		for (int id = 1; id <= P; id++) {
 			service.execute(new CalculationWorker(resourseMonitor, syncMonitor, id));
 		}
-		System.out.println("Lab 6 finished");
+		
 		service.shutdown();
+		System.out.println("Lab 6 finished");
 	}
 
 }

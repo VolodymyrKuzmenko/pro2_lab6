@@ -1,5 +1,18 @@
 package pro2_lab6;
-
+/**
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ *                                                                           *
+ *                 Laboratory work #6. Java. Monitors                        *
+ *                                                                           *
+ * Task: MA = (B*C)*MO + α*(MT*MR)                                           *
+ *                                                                           *
+ * @file SynchronizationMonitor.java 				     				     *
+ * @author Kuzmenko Volodymyr					                             *
+ * @group IO-21								                                 *
+ * @date 17.04.2014                                                          *
+ *                                                                           *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ */
 public class SynchronizationMonitor {
 	private int inputFlag = 0;
 	private int vFlag = 0;
