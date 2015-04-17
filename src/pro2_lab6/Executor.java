@@ -1,4 +1,8 @@
 package pro2_lab6;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
 /**
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  *                                                                           *
@@ -9,13 +13,10 @@ package pro2_lab6;
  * @file Executor.java 										                 *
  * @author Kuzmenko Volodymyr					                             *
  * @group IO-21								                                 *
- * @date 17.04.2014                                                          *
+ * @date 17.04.2015                                                          *
  *                                                                           *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  */
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-
 public class Executor {
 	public static int N = 12;
 	public static int P = 6;

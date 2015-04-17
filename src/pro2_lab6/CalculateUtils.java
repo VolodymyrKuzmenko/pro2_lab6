@@ -10,7 +10,7 @@ package pro2_lab6;
  * @file CalculateUtils.java 								    		     *
  * @author Kuzmenko Volodymyr					                             *
  * @group IO-21								                                 *
- * @date 17.04.2014                                                          *
+ * @date 17.04.2015                                                          *
  *                                                                           *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  */
