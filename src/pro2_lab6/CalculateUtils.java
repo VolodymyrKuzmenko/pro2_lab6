@@ -7,9 +7,9 @@ package pro2_lab6;
  *                                                                           *
  * Task: MA = (B*C)*MO + α*(MT*MR)                                           *
  *                                                                           *
- * @file CalculateUtils.java 								    		     *
- * @author Kuzmenko Volodymyr					                             *
- * @group IO-21								                                 *
+ * @file CalculateUtils.java 						     *
+ * @author Kuzmenko Volodymyr					             *
+ * @group IO-21								     *
  * @date 17.04.2015                                                          *
  *                                                                           *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
